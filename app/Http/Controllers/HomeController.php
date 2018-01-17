@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Goutte\Client;
-use GuzzleHttp\Client as GuzzleClient;
 use Storage;
 use Symfony\Component\DomCrawler\Crawler;
 
