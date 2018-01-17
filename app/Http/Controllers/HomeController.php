@@ -11,21 +11,17 @@ class HomeController extends Controller
 {
     public function part1()
     {
-        $client = new Client([
-            'base_uri' => 'http://localhost:8000',
-            'defaults' => [
-                'exceptions' => false
-            ]
-        ]);
+        $client = new Client();
         $crawler = $client->request(
             'GET',
-            '/'
+            'https://otvety-test.herokuapp.com/part1'
         );
-        return $crawler->html();
-        $data = $crawler->filter('table > tr')->each(function (Crawler $node) {
-            $q = $node->filter('td')->text();
-            $answers = trim($node->filter('td OL LI')->text());
-            return ['question' => $q, 'answers' => $answers];
+        $data = $crawler->filter('table > tr > td')->each(function (Crawler $node) {
+            $q = trim($node->filter('b')->html());
+            $answers = $node->filter('ol li')->each(function (Crawler $node) {
+                return trim($node->text());
+            });
+            return ['question' => $q, 'answers' => $answers, 'correct' => 1];
         });
         $json_data = json_encode($data, JSON_UNESCAPED_UNICODE);
         Storage::put('questions.json', $json_data);
