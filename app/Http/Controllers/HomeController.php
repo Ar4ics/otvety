@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Goutte\Client;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Storage;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -26,4 +27,18 @@ class HomeController extends Controller
         Storage::put('questions.json', $json_data);
         return $data;
     }
+
+    public function part1answers()
+    {
+        try {
+            $answers = json_decode(Storage::get('answers.json'));
+            return view('part1/answers')->with('answers', $answers);
+        } catch (FileNotFoundException $e) {
+            return $e;
+        }
+
+
+    }
+
+
 }
