@@ -15,7 +15,7 @@
     @foreach ($answers as $answer)
         <tr>
             <td>
-                <b>{{ $answer->question }}
+                <b>{!! $answer->question !!}
                 </b>
                 <ol>
                     @foreach ($answer->answers as $variant)
