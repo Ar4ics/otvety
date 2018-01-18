@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/part1', function () {
-    return view('part1/questions');
-});
-
-Route::get('/part1/get', 'HomeController@part1');
-Route::get('/part1/answers', 'HomeController@part1answers');
+Route::get('/questions/{part}','HomeController@questions');
+Route::get('/parse/{part}', 'HomeController@parse');
+Route::get('/answers/{part}', 'HomeController@answers');
