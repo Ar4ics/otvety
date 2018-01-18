@@ -7,7 +7,7 @@
 
 <H2>Тест по специальности 05.13.18</H2>
 
-<H3>Раздел I. Математическое моделирование </H3>
+<H3>{{ $part }}. Математическое моделирование </H3>
 
 
 <table>
@@ -15,8 +15,7 @@
     @foreach ($answers as $answer)
         <tr>
             <td>
-                <b>{!! $answer->question !!}
-                </b>
+                <b>{!! $answer->question !!}</b>
                 <ol>
                     @foreach ($answer->answers as $variant)
                         @if ($loop->iteration === $answer->correct)
