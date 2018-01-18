@@ -20,9 +20,9 @@
                 <ol>
                     @foreach ($answer->answers as $variant)
                         @if ($loop->iteration === $answer->correct)
-                            <li style="background-color: #2ab27b">{{ $variant }}</li>
+                            <li style="background-color: #2ab27b">{!! $variant !!}</li>
                         @else
-                            <li>{{ $variant }}</li>
+                            <li>{!! $variant !!}</li>
                         @endif
                     @endforeach
                 </ol>
