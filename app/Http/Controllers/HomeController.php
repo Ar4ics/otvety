@@ -29,7 +29,7 @@ class HomeController extends Controller
             return ['question' => $q, 'answers' => $answers, 'correct' => 1];
         });
         $json_data = json_encode($data, JSON_UNESCAPED_UNICODE);
-        Storage::put('questions.json', $json_data);
+        Storage::put($part . '/questions.json', $json_data);
         return $data;
     }
 
