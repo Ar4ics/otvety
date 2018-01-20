@@ -1,0 +1,420 @@
+<HTML>
+<HEAD>
+<TITLE>Вариант №122 тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "c";
+ans[2] = "e";
+ans[3] = "e";
+ans[4] = "a";
+ans[5] = "c";
+ans[6] = "d";
+ans[7] = "c";
+ans[8] = "a";
+ans[9] = "b";
+ans[10] = "b";
+ans[11] = "c";
+ans[12] = "b";
+ans[13] = "c";
+ans[14] = "d";
+ans[15] = "a";
+ans[16] = "c";
+ans[17] = "e";
+ans[18] = "d";
+ans[19] = "g";
+ans[20] = "b";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №122</H2>
+
+<P><B>1. Опишите метод Гаусса решения системы линейных алгебраических уравнений </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+Заданная система линейных уравнений каким-либо образом приводится к эквивалентному виду.
+Исходя из произвольного начального вектора, строится итерационный процесс. При выполнении
+достаточных условий сходимости, получается последовательность векторов, неограниченно
+приближающихся к точному решению
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+Если матрица коэффициентов А невырожденная (определитель этой матрицы не равен нулю), то
+исходная система имеет единственное решение. Значения неизвестных могут быть получены по
+формулам x<sub>i</sub>=detA<sub>i</sub>/detA, detA<sub>i</sub> и detA &ndash; определители 
+матриц A<sub>i</sub> и А соответственно. 
+Матрица A<sub>i</sub>
+образуется из матрицы А путем замены ее i-го столбца столбцом свободных членов. 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+В основе данного метода лежит идея последовательного исключения неизвестных. Решение
+системы распадается на два этапа: 1) прямой ход, когда исходная система приводится к треугольному
+виду; 2) полученные коэффициенты при неизвестных и правые части уравнений хранятся в памяти
+ЭВМ и используются при осуществлении обратного хода, который заключается в нахождении
+неизвестных из системы треугольного вида.
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+Метод Гаусса разработан для решения системы линейных алгебраических уравнений
+ с трехдиагональной матрицей коэффициентов
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+Метод Гаусса не применяется для  решения системы линейных алгебраических уравнений
+
+
+<P><B>2. При контроле решения алгебраического уравнения может быть полезна:  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+Теорема Ньютона 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+Теорема Перрона 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+Теорема Штурма 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+Теорема Бюдана-Фурье 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+Теорема Виета 
+
+
+
+
+<P><B>3. Расположите в порядке возрастания числа при условии 0&#60;h&#60;1
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+h,h<SUP>2</SUP>,h<SUP>3</SUP>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+h,h<SUP>3</SUP>,h<SUP>2</SUP>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+h<SUP>2</SUP>,h<SUP>3</SUP>,h
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+h<SUP>2</SUP>,h,h<SUP>3</SUP>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+h<SUP>3</SUP>,h<SUP>2</SUP>,h
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=f>
+h<SUP>3</SUP>,h,h<SUP>2</SUP>
+
+
+<P><B>4. Какой из перечисленных ниже методов одномерной минимизации позволяет определить глобальный минимум неунимодальной функции?  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+Метод прямого поиска 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+Метод половинного деления (дихотомии) 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+Метод золотого сечения 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+Метод бисекции 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+Метод Ньютона 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=f>
+Метод квадратичной интерполяции 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=g>
+Метод Фиббоначи 
+
+<P><B>5. Метод последовательного исключения неизвестных в системе линейных уравнений вида AX=B известен под названием </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+Метод Карлсона
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+Метод Ньютона 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+Метод Гаусса 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+Метод Симпсона 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+Метод Крамера 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=f>
+Метод Монте-Карло 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=g>
+Метод трапеций 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=h>
+Метод Рунге-Кутта 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=i>
+Метод средних 
+
+
+<P><B>6.  Округлите число 1,7320508 до пяти значащих цифр и выберите правильный ответ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+1, 173215 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+1, 17321 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+1, 17322 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+1, 1732 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+1, 173 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=f>
+1, 17
+
+<P><B>7. Корень уравнения f (x)=0 отделен на промежутке (&ndash;2; &ndash;1). 
+Решаем уравнение f (x)=0 методом итераций, представив в виде х = &#966;(х). За &#966;(х) можно принять
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+&ndash;2 &ndash; f(&ndash;2)/f&#180;(&ndash;2)
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+&ndash;2 &ndash; f(&ndash;2)&#183;(&ndash;1&ndash;2)/[f(&ndash;1)&ndash;f(&ndash;2)]
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+x + f(x)/8
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+&ndash;2
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+&ndash;1,5
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=f>
+&ndash;1
+
+
+<P><B>8.  В методе Гаусса решения системы N линейных уравнений вектор начального приближения </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+не выбирается 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+выбирается исходя из условия минимума целевой функции 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+выбирается исходя из условия соответствия решения заданным экспериментальным данным 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+выбирается "из области разумных" 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+выбирается произвольно 
+
+
+<P><B>9. Необходимым условием существования экстремума функции    y=f(x) в точке x = x<sub>0</sub>  является:
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+f&#8242;(x<sub>0</sub>) &#60; 0
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+f&#8242;(x<sub>0</sub>) = 0
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+f&#8242;(x<sub>0</sub>) &#62; 0
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+f&#8243;(x<sub>0</sub>) &#60; 0
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+f&#8243;(x<sub>0</sub>) = 0
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=f>
+f&#8243;(x<sub>0</sub>) &#62; 0
+
+
+<P><B>10.  Утверждение «Оператор в теле цикла будет обязательно выполнен хотя бы один раз» относится к 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+циклу с убыванием значения параметра 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+циклу с постусловием 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+циклу с параметром 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+циклу с предусловием 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+ни к одному из перечисленных 
+
+<P><B>11. Погрешность математической модели является  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+возрастающей 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+регулируемой 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+неустранимой 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+вычислительной 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+итерационной 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=f>
+перколяционной
+
+<P><B>12.  Существуют следующие методы численного интегрирования:
+<BR>А) Симпсона
+<BR>В) Ньютона
+<BR>Подберите правильный ответ
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+A &ndash; да, В &ndash; да
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+А &ndash; да, В &ndash; нет
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+А &ndash; нет, В &ndash; да
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+А &ndash; нет, В &ndash; нет
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+Ответ зависит от вида интеграла
+
+
+<P><B>13. Уравнение прямой, проходящей через начало координат и составляющей с осью ОХ угол &#945;=60&#176;  имеет вид:
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+y = &#8730;x
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+y = &ndash;&#8730;x
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+y = x&#8730;3
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+y = &ndash;x&#8730;3 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+y =&#8730;x/3
+
+
+<P><B>14. Заданы два приближенных числа a=2±0,1 и b=1,2±0,05. Тогда предельная абсолютная погрешность разности этих чисел равна...  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+0 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+0,05 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+0,1 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+0,15 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+0,2 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=f>
+1,2 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=g>
+2 
+
+<P><B>15.  При контроле решения алгебраического уравнения может быть полезна: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+Теорема Виета 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+Теорема Ньютона 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+Теорема Перрона 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+Теорема Штурма 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+Теорема Бюдана-Фурье 
+
+<P><B>16.  Функция y(x) задана в табличном виде: 
+<table border=1>
+<tr align=center><td>x</td><td>1</td><td>1,5</td><td>2</td></tr>
+<tr align=center><td>y</td></td><td>3,2<td>3,7</td><td>4,2</td></tr>
+</table>
+Значение этой функции, полученное с помощью линейной интерполяции при x=1,24, равно 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+3,40 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+3,42 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+3,44 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+3,46 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+3,48
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=f>
+3,50
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=g>
+3,52 
+
+
+<P><B>17.  Нелинейное уравнение записано в виде, удобном для итераций:
+x=0,5&#183;(x/2+2/x)
+Найти значение одного шага по методу простой итерации x<sub>1</sub>, если начальное приближение  
+x<sub>0</sub>=4
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+1,0 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+1,25 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+1,5 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+1,75 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+2,0 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=f>
+2,5 
+
+<P><B>18. Верны ли следующие утверждения?
+<BR>A.  Метод итераций для решения нелинейного уравнения сходится всегда
+<BR>B.  Метод Ньютона для решения нелинейного уравнения сходится не всегда
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+А &ndash;  нет, В &ndash;  нет
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+А &ndash;  нет, В &ndash;  да
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+А &ndash;  да, В &ndash;  нет
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+А &ndash;  да, В &ndash;  да
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+ответ зависит от объема оперативной памяти и быстродействия компьютера 
+
+<P><B>19. Найдите неверное утверждение   </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+для плохо обусловленных систем линейных уравнений малые ошибки в правых частях и коэффициентах приводят к большим погрешностям в решении системы 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+при решении задачи Коши дополнительные условия задаются в одной точке 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+определенный интеграл может быть вычислен методом Монте-Карло 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+под ошибкой или погрешностью &#916;а приближенного числа а обычно понимается разность между соответствующим точным числом А и данным приближением 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+для формул численного дифференцирования центральные разности имеют более высокую точность, чем односторонние разности 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=f>
+для формул численного интегрирования метод Симпсона имеет более высокую точность, чем метод трапеций 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=g>
+все утверждения верны 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=h>
+нет верных утверждений 
+
+
+<P><B>20.  Найдите минимум функции y=xlnx
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+1/e<SUP>2</SUP>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+1/e
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+1/2e
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+1/e<SUP>&ndash;2</SUP>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+&ndash;1/e
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

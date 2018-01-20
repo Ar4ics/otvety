@@ -1,0 +1,390 @@
+<HTML>
+<HEAD>
+<TITLE>Варианты тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "b";
+ans[2] = "e";
+ans[3] = "b";
+ans[4] = "a";
+ans[5] = "b";
+ans[6] = "e";
+ans[7] = "b";
+ans[8] = "b";
+ans[9] = "e";
+ans[10] = "b";
+ans[11] = "c";
+ans[12] = "d";
+ans[13] = "c";
+ans[14] = "e";
+ans[15] = "b";
+ans[16] = "b";
+ans[17] = "b";
+ans[18] = "c";
+ans[19] = "b";
+ans[20] = "b";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+
+<H2>Вариант №99</H2>
+
+<P><B>1. Постановка задачи   
+<BR>Максимизировать &#931;c<sub>j</sub>x<sub>j</sub>, j=1,2,...,n
+<BR>при следующих ограничениях 
+<BR>&#931;b<sub>ij</sub>x<sub>j</sub> &#8804;  b<sub>i</sub>, i=1,2,...,m 
+<BR>x<sub>i</sub>=0,1,2,....                       
+<BR>Эта задача должна решаться с использованием одного из алгоритмов   </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+оптимального программирования 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+линейного программирования 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+дискретного программирования 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+сепарабельного программирования 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+параметрического программирования 
+
+
+<P><B>2.  В том случае если несхожие по своей природе операции могут быть описаны одними и теми же математическими моделями, говорят, что имеет место </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+наличие ограничивающих факторов 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+наличие дисциплинирующих условий 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+наличие альтернативных линий поведения 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+наличие цели 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+изоморфизм моделей 
+
+<P><B>3. Ситуацию принятия решения характеризует наличие </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+изоморфизма моделей 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+альтернативных линий поведения 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+управляющего воздействия 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+критерия оптимальности 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+исследователя операции 
+
+
+<P><B>4.  Как называется задача, которая состоит в определении 
+максимального (минимального) значения функции: 
+</B>
+<table width=400><tr><td> 
+F = &#931;c<sub>j</sub>x<sub>j</sub> </td></tr>  
+<tr><td>при условиях</td><td><tr></tr> 
+<tr><td>&#931;a<sub>ij</sub>x<sub>j</sub>&#8804;b<sub>i</sub>, i=1,2,..,k</td></tr>
+<tr><td>&#931;a<sub>ij</sub>x<sub>j</sub>=b<sub>i</sub>, i=k+1,...,m</td></tr>
+<tr><td>x<sub>i</sub>&#8805;0; i=1,2,...,l  </td></tr>
+</table>
+где a<sub>ij</sub>, b<sub>i</sub>, c<sub>j</sub> &#8722; 
+заданные постоянные величины и k&#8804;m.              </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+Общая задача линейного программирования 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+Стандартная (или симметричная) задача линейного программирования 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+Каноническая (или основная) задача линейного программирования 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+Основная (или стандартная) задача линейного программирования 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+Симметричная (или каноническая) задача линейного программирования 
+
+<P><B>5.  Симплексный метод применяется для решения </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+задач динамического программирования 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+задач линейного программирования 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+задач теории массового обслуживания 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+марковских задач принятия решений 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+задач нелинейного программирования 
+
+
+<P><B>6.  Наличие противоборствующих сторон, для каждой из которых определены стратегии принятия решения и на их основе сформирована платежная матрица, присутствуют в задачах </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+линейного программирования 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+теории массового обслуживания 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+планирования операций 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+нелинейного программирования 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+теории игр 
+
+
+<P><B>7.  По наличию или отсутствию зависимости критерия оптимальности и ограничений от времени задачи принятия решений делят на </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+детерминированные и недетерминированные 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+статические и динамические 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+статистические и стохастические 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+однокритериальные и многокритериальные 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+скалярные и векторные 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=f>
+задачи принятия решений в условиях определенности и неопределенности 
+
+
+
+<P><B>8.   Каким свойством обладает множество планов основной задачи линейного программирования? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+Изоморфизм 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+Выпуклость 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+Вогнутость 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+Линейность 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+Нелинейность 
+
+
+<P><B>9. Дисциплинирующие условия для общей задачи линейного программирования записываются в задаче принятия решений </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+в интегральном виде 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+в дифференциальной форме 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+в виде равенств 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+в виде неравенств 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+в виде равенств и неравенств 
+
+
+
+<P><B>10. Как называется задача, которая состоит в определении 
+максимального значения функции:</B>                
+<table width=400><tr><td> 
+F = &#931;c<sub>j</sub>x<sub>j</sub>  &#160;&#8594; &#160;max</td></tr>  
+<tr><td>при условиях</td><td><tr></tr> 
+<tr><td>&#931;a<sub>ij</sub>x<sub>j</sub>=b<sub>i</sub>, i=1,...,m</td></tr>
+<tr><td>x<sub>i</sub>&#8805;0; i=1,2,...,n  </td></tr>
+</table>
+где a<sub>ij</sub>, b<sub>i</sub>, c<sub>j</sub> &#8722; 
+заданные постоянные величины.               </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+Общая задача линейного программирования 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+Стандартная (или симметричная) задача линейного программирования 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+Каноническая (или основная) задача линейного программирования 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+Основная (или стандартная) задача линейного программирования 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+Симметричная (или каноническая) задача линейного программирования 
+
+
+<P><B>11.  Если основная задача линейного программирования имеет оптимальный план, то максимальное значение целевая функция задачи принимает </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+на одном из ребер многоугольника решений 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+на одной из граней многогранника решений 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+в одной из вершин многогранника решений 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+в оптимальном угле многогранника решений 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+в начале координат 
+
+
+<P><B>12.  Дисциплинирующие условия для стандартной задачи линейного программирования записываются в задаче принятия решений </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+в интегральном виде 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+в дифференциальной форме 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+в виде равенств 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+в виде неравенств 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+в виде равенств и неравенств 
+
+
+<P><B>13.  Если целевая функция прямой задачи линейного программирования задается на максимум, то </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+коэффициенты целевой функции двойственной задачи не равны нулю 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+коэффициенты целевой функции прямой задачи не равны нулю 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+то двойственной - на минимум 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+то двойственной - на максимум 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+коэффициенты целевой функции двойственной задачи равны нулю 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=f>
+коэффициенты целевой функции прямой задачи равны нулю 
+
+<P><B>14. Число ограничений прямой задачи линейного программирования  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+меньше числа переменных двойственной задачи 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+больше числа переменных двойственной задачи 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+равно нулю 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+не равно количеству коэффициентов целевой функции двойственной задачи 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+равно числу переменных двойственной задачи 
+
+<P><B>15.  Число ограничений двойственной задачи линейного программирования </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+меньше числа переменных прямой задачи 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+равно числу переменных прямой задачи 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+больше числа переменных прямой задачи 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+не равно количеству коэффициентов целевой функции прямой задачи 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+равно нулю
+
+<P><B>16.  Свободные члены ограничений прямой задачи линейного программирования </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+являются коэффициентами целевой функции прямой задачи 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+являются коэффициентами целевой функции двойственной задачи 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+всегда равны нулю 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+называются двойственными оценками 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+называются объективно обусловленными оценками 
+
+
+<P><B>17.  Задача линейного программирования, двойственная двойственной, </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+всегда имеет оптимальный план 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+совпадает с исходной 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+не существует 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+называется тройственной задачей линейного программирования 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+представляет осбой задачу нелинейного программирования 
+
+
+<P><B>18.  Дисциплинирующие условия для канонической задачи линейного программирования записываются в задаче принятия решений </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+в интегральном виде 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+в дифференциальной форме 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+в виде равенств 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+в виде неравенств 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+в виде равенств и неравенств 
+
+
+
+<P><B>19.  Непустое множество планов основной задачи линейного программирования образует </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+равносторонний треугольник 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+выпуклый многогранник 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+параболоид вращения 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+эллипсоид 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+цилиндр 
+
+
+<P><B>20.  Как называется задача, которая состоит в определении 
+максимального значения функции:</B> 
+<table width=400><tr><td> 
+F = &#931;c<sub>j</sub>x<sub>j</sub> &#160;&#8594; &#160;max</td></tr>  
+<tr><td>при условиях</td><td><tr></tr> 
+<tr><td>&#931;a<sub>ij</sub>x<sub>j</sub>&#8804;b<sub>i</sub>, i=1,2,..,m</td></tr>
+<tr><td>x<sub>i</sub>&#8805;0; i=1,2,...,n  </td></tr>
+</table>                
+где a<sub>ij</sub>, b<sub>i</sub>, c<sub>j</sub> &#8722; 
+заданные постоянные величины.              
+
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+Общая задача линейного программирования 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+Стандартная (или симметричная) задача линейного программирования 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+Каноническая (или основная) задача линейного программирования 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+Основная (или стандартная) задача линейного программирования 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+Симметричная (или каноническая) задача линейного программирования 
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

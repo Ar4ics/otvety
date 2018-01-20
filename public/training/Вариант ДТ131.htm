@@ -1,0 +1,420 @@
+<HTML>
+<HEAD>
+<TITLE>Вариант №131 тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "a";
+ans[2] = "c";
+ans[3] = "c";
+ans[4] = "c";
+ans[5] = "d";
+ans[6] = "a";
+ans[7] = "d";
+ans[8] = "e";
+ans[9] = "b";
+ans[10] = "a";
+ans[11] = "b";
+ans[12] = "c";
+ans[13] = "a";
+ans[14] = "e";
+ans[15] = "d";
+ans[16] = "b";
+ans[17] = "c";
+ans[18] = "a";
+ans[19] = "c";
+ans[20] = "a";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №131</H2>
+
+<P><B>1. Что является основным требованием к методу решения систем линейных алгебраических уравнений? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+минимум числа арифметических действий, достаточных для отыскания приближенного решения с заданной точностью 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+максимум числа арифметических действий, достаточных для отыскания точного решения 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+минимум числа арифметических действий, достаточных для отыскания точного решения 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+максимум числа арифметических действий, достаточных для отыскания приближенного решения с заданной точностью 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+возможность отыскания точного решения аналитическими методами для проверки правильности результата 
+
+
+<P><B>2.  Метод позволяющий получить корни системы с заданной точностью путем сходящихся бесконечных процессов
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+приближенный метод 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+точный метод 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+итерационный метод 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+метод Зейделя 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+метод интерполяции 
+
+
+
+<P><B>3. В чем состоит основная идея метода градиентного спуска </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+Спуск осуществляется в направлении градиента 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+Спуск осуществляется в направлении, перпендикулярном направлению градиента 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+Спуск осуществляется в направлении, противоположном направлению градиента 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+Спуск осуществляется последовательно по каждой координате, но шаг спуска выбирается равным модулю градиента 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+Точность вычислений оценивается по значению градиента 
+
+
+
+<P><B>4.  Какая из приведенных формул является формулой 
+итерационного процесса метода Ньютона решения уравнения f(x)=0?   
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+x<sub>i+1</sub> = x<sub>i</sub> + f(x<sub>i</sub>) &#8260; f&#180;(x<sub>i</sub>), i=1,2,...
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+x<sub>i+1</sub> = x<sub>i</sub> &#8722; f&#180;(x<sub>i</sub>) &#8260; f(x<sub>i</sub>), i=1,2,...
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+x<sub>i+1</sub> = x<sub>i</sub> &#8722; f(x<sub>i</sub>) &#8260; f&#180;(x<sub>i</sub>), i=0,1,2,...
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+x<sub>i+1</sub> = x<sub>i</sub> &#8722; f&#180;(x<sub>i</sub>) &#8260; f(x<sub>i</sub>), i=0,1,2,...
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+x<sub>i</sub> = x<sub>i+1</sub> &#8722; f(x<sub>i+1</sub>) &#8260; f&#180;(x<sub>i</sub>), i=1,2,...
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=f>
+нет правильного ответа
+
+<P><B>5. Какой из перечисленных ниже численных методов применяется для поиска минимума функций многих переменных? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+Метод Гаусса 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+Метод Рунге-Кутта 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+Метод золотого сечения 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+Градиентный метод 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+Метод Симпсона 
+
+
+<P><B>6.  Как называется метод решения систем линейных алгебраических уравнений, который позволяет за конечное число действий получить точное решение системы уравнений, если входная информация задана точно, и вычисления ведутся без округления? Выберите один ответ: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+прямой метод 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+итерационный метод 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+дискретный метод 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+метод Карлсона 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+метод Симпсона
+
+
+<P><B>7.  Отделить корень уравнения x + arctgx &ndash; 2 =0 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+x&#8712;(&ndash;6;&ndash;4)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+x&#8712;(&ndash;4;&ndash;2)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+x&#8712;(&ndash;2;0)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+x&#8712;(0;1)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+x&#8712;(1;2)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=f>
+x&#8712;(2;3)
+
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=g>
+x&#8712;(3;8)
+
+
+
+<P><B>8.  В чем состоит основная идея метода наименьших квадратов? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+по данным эксперимента построить приближенно функцию таким образом, чтобы сумма отклонений построенной функции от экспериментальной в узловых точках была минимальна 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+по заданной таблице значений построить приближенно функцию таким образом, чтобы построенная функция проходила через узловые точки 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+по заданной таблице значений построить приближенно функцию с тем расчетом, чтобы построенная функция не проходила через узловые точки 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+по заданной таблице значений построить приближенно функцию таким образом, чтобы построенная функция могла как проходить через узловые точки, так и не проходить через них 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+по данным эксперимента построить приближенно функцию таким образом, чтобы сумма квадратов отклонений построенной функции от экспериментальной в узловых точках была минимальна 
+
+
+
+
+
+<P><B>9. Верны ли следующие утверждения? 
+<BR>А) Абсолютная погрешность суммы двух чисел равна сумме абсолютных погрешностей этих чисел
+<BR>В) Абсолютная погрешность частного двух чисел равна разности абсолютных погрешностей этих чисел
+<BR>Подберите правильный ответ
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+A &ndash; да, В &ndash; да
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+А &ndash; да, В &ndash; нет
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+А &ndash; нет, В &ndash; да
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+А &ndash; нет, В &ndash; нет
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+Абсолютная погрешность частного не существует
+
+
+<P><B>10.  Производная по x от функции y=ab<SUP>x</SUP> (где a,b &ndash; постоянные) равна                    
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+ab<SUP>x</SUP>lnx
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+ab<SUP>x&ndash;1</SUP>  
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+ab<SUP>x+1</SUP>/(x+1)  
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+ab<SUP>x&ndash;1</SUP>/(b&ndash;1) 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+ab<SUP>x&ndash;1</SUP>/(x&ndash;1)
+
+
+
+
+<P><B>11.  Под каким углом к оси абсцисс направлен градиент  функции 
+z=x<SUP>2</SUP>+y<SUP>2</SUP> &#8722; 5,    в точке М(1;&ndash;1)?  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+&#8722;90&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+&#8722;45&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+0&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+45&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+90&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=f>
+180&#176;
+
+<P><B>12.  Метод бисекции (деления отрезка пополам) решения уравнения вида f(x) = 0 дает </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+монотонное приближение к правильному корню уравнения сверху 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+монотонное приближение к правильному корню уравнения снизу 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+одновременно нижнюю и верхнюю оценки интервала, на котором находится корень уравнения 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+может породить расходящийся вычислительный процесс 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+монотонное приближение к правильному корню уравнения справа 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=f>
+монотонное приближение к правильному корню уравнения слева 
+
+
+<P><B>13.  Пусть дана функция y = f(x) и a &ndash; приближенное значение аргумента x, &#916;a &ndash; его абсолютная погрешность. 
+Тогда за абсолютную погрешность функции можно принять ее приращение или дифференциал &#916;&#8776;dy, 
+&#916;=|f&#180;(a)|&#183;&#916;a. Чему равно приращение функции y=cosx, если a &ndash; приближенное значение x? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+&#916;y = |sinx|&#183;&#916;a
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+&#916;y =  |cosx|&#183;&#916;a
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+&#916;y =  |tgx|&#183;&#916;a
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+&#916;y =  |ctgx|&#183;&#916;a
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+&#916;y = x&#183;&#916;a/sin<SUP>2</SUP>x
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=f>
+&#916;y = x&#183;&#916;a/cos<SUP>2</SUP>x
+
+
+
+<P><B>14. Необходимым условием экстремума функционала является  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+равенство нулю его первой производной 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+равенство нулю его второй производной 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+положительная определенность его гессиана 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+одновременное равенство нулю всех его частных производных 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+равенство нулю его первой вариации 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=f>
+отличие от нуля его гессиана 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=g>
+равенство нулю его лагранжиана 
+
+
+
+
+<P><B>15.  Отделить корни уравнения х<SUP>3</SUP> &ndash; 3х &ndash; 5=0
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+Единственный корень расположен между &ndash;&#8734;  и &ndash;1
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+Один из корней находится на отрезке [0,1]
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+Один из корней находится на отрезке [1,2]
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+Один из корней находится на отрезке [2,3]
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+Один из корней находится на отрезке [&ndash;1,0]
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=f>
+Корней нет
+
+<P><B>16. При контроле решения алгебраического уравнения может быть полезна:  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+Теорема Бюдана-Фурье 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+Теорема Виета 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+Теорема Лагранжа 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+Теорема Ньютона 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+Теорема Перрона 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=f>
+Теорема Пикара 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=g>
+Теорема Штурма 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=h>
+Теорема Эйлера
+
+
+<P><B>17.  Функция задана таблицей :
+<table border=1 cellpadding=2>
+<tr align=center><td>i</td><td>0</td><td>1</td><td>2</td></tr>
+<tr align=center><td>x</td><td>&ndash;1</td><td>0</td><td>1</td></tr>
+<tr align=center><td>y</td><td>y<sub>0</sub></td><td>y<sub>1</sub></td><td>y<sub>2</sub></td></tr>
+</table>
+Получим интерполяционный многочлен, соответствующий этой таблице: 
+7x<SUP>2</SUP> &ndash;  x &ndash;  1 
+Найти: y<sub>0</sub>; y<sub>1</sub>; y<sub>2</sub> 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+8; 1; &ndash;2
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+&ndash;3; &ndash;1; 7
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+7; &ndash;1; 5
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+2; &ndash;1; 0
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+7; &ndash;1; &ndash;5
+
+<P><B>18.    Определить обусловленность системы 
+<BR>x<sub>1</sub> + 5x<sub>2</sub> = 0
+<BR>6x<sub>1</sub> &#8722; 3x<sub>2</sub> = 3               </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+обусловлена 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+не обусловлена 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+плохо обусловлена 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+хорошо обусловлена 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+нельзя определить 
+
+
+<P><B>19.  Проблема получения формулы сходящегося итерационного процесса возникает при решении уравнения f(x)=0 методом… </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+хорд 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+Ньютона 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+простых итерации 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+сканирования 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+деления отрезка пополам (дихотомии) 
+
+
+<P><B>20.  Условием  сходимости для метода последовательных приближений 
+при решении нелинейного уравнения вида f(x)=0, x&#8712;[a,b] является :         </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+|f&#8242;(x)| &#60; 1
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+|f&#8242;(x)| = 0
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+|f&#8242;(x)| = 1
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+|f&#8242;(x)| &#62; 1
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+|f(x)| &#60; 0
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=f>
+&#916;A &#8800; 0
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<HTML>
+<HEAD>
+<TITLE>Вариант №128 тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "d";
+ans[2] = "b";
+ans[3] = "c";
+ans[4] = "c";
+ans[5] = "e";
+ans[6] = "d";
+ans[7] = "d";
+ans[8] = "b";
+ans[9] = "c";
+ans[10] = "b";
+ans[11] = "e";
+ans[12] = "a";
+ans[13] = "d";
+ans[14] = "e";
+ans[15] = "c";
+ans[16] = "d";
+ans[17] = "b";
+ans[18] = "a";
+ans[19] = "d";
+ans[20] = "e";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №128</H2>
+
+<P><B>1. В чем суть итерационного метода решения систем линейных алгебраических уравнений?
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+позволяет за конечное число действий получить точное решение системы уравнений, если входная информация задана точно, и вычисления ведутся без округления 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+позволяет найти приближенное решение системы путем исключения приближений 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+позволяет за конечное число действий получить точное решение системы уравнений, если входная информация задана не точно 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+позволяет найти приближенное решение системы путем построения последовательности приближений, начиная с некоторого начального приближения 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+позволяет найти точное решение системы аналитическим методами 
+
+
+<P><B>2.  В методе Гаусса приведение системы линейных уравнений к треугольному виду </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+обратный ход 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+прямой ход 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+простая итерация 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+двойной пересчет 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+задний ход
+
+
+<P><B>3. Метод итерации &ndash; 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+численный метод, который последовательно, шаг за шагом, уточняет первоначальное, точное значение корня 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+численный метод, который последовательно, шаг за шагом, уточняет конечное, грубое значение корня 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+численный метод, который последовательно, шаг за шагом, уточняет первоначальное, грубое значение корня 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+нахождение для заданной функции другой функции из некоторого класса функций, для которой среднеквадратичное отклонение от заданной функции минимально 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+функция, гладко склеенная из кусков функций некоторого класса и проходящая через узла интерполяции 
+
+
+<P><B>4.  Какой из перечисленных ниже
+ методов применяется для решения систем нелинейных уравнений вида 
+<BR> f<sub>1</sub>(x<sub>1</sub>,x<sub>2</sub>)=0;  
+<BR> f<sub>2</sub>(x<sub>1</sub>,x<sub>2</sub>)=0;          
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+Метод прямоугольников 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+Метод трапеций 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+Метод Ньютона 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+Метод Рунге-Кутта 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+Метод средних 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=f>
+Метод Симпсона 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=g>
+Метод Эйлера 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=h>
+Метод Монте-Карло 
+
+<P><B>5. Задача численного интегрирования функции заключается в </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+вычислении определенного интеграла путем интерполяции входных данных сплайнами 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+вычислении определенного интеграла путем  экстраполяции входных данных сплайнами 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+вычислении определенного интеграла путем интерполяции выходных данных сплайнами 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+вычислении определенного интеграла путем экстраполяции выходных данных сплайнами 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+в разбиении отрезка на множество отрезков меньших размеров и вычислении интеграла как суммы, приближенно вычисленных площадей полосок, получившихся при таком разбиении 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=f>
+вычислении определенного интеграла на основании ряда значений подинтегральной функции 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=g>
+поиске аналитической формулы для вычисления определённого интеграла или дифференциала функции 
+
+
+<P><B>6.  Какой из перечисленных ниже методов решения нелинейных уравнений вида f(x)=0 дает возможность произвести локализацию корней неунимодальной функции f(x)? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+Метод итераций 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+Метод деления отрезка пополам 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+Метод хорд 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+Метод перебора 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+Метод Ньютона 
+
+
+
+
+<P><B>7. Какой вид матриц возможен ? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+трехдиагональная 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+тороидальная 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+продольная 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+разреженная 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+кубичная 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=f>
+поперечная
+
+
+<P><B>8.   Какой интерполяционный многочлен соответствует таблице
+<table border=1 cellpadding=1>
+<tr align=center><td>x</td><td>&ndash;2</td><td>&ndash;1</td><td>0</td></tr>
+<tr align=center><td>y</td><td>9</td><td>&ndash;1</td><td>&ndash;1</td></tr>
+</table>
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+y = 2x<SUP>2</SUP> + x &ndash; 1 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+y = 3x<SUP>2</SUP> + x &ndash; 1 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+y = 4x<SUP>2</SUP> &ndash; x &ndash; 1 
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+y = 6x<SUP>2</SUP> + x &ndash; 1
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+y = x<SUP>2</SUP> + x + 1
+
+
+
+
+<P><B>9. В точке перегиба графика функции: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+график проходит через минимум 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+график проходит через максимум 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+график меняет направление выпуклости 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+функция меняет знак 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+меняется знак производной 
+
+
+
+<P><B>10.  Производная по x от функции y=ax<SUP>b</SUP> (где a,b - постоянные) равна                    
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+ax<SUP>b</SUP>lnx
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+abx<SUP>b&ndash;1</SUP>  
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+ax<SUP>b+1</SUP>/(b+1)  
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+abx<SUP>b+1</SUP>/(b+1) 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+ax<SUP>b&ndash;1</SUP>/(b&ndash;1)
+
+
+
+<P><B>11.   Функция задана таблицей :
+<table border=1 cellpadding=2>
+<tr align=center><td>i</td><td>0</td><td>1</td><td>2</td></tr>
+<tr align=center><td>x</td><td>&ndash;1</td><td>0</td><td>1</td></tr>
+<tr align=center><td>y</td><td>y<sub>0</sub></td><td>y<sub>1</sub></td><td>y<sub>2</sub></td></tr>
+</table>
+Получим интерполяционный многочлен, соответствующий этой таблице: 
+2x<SUP>2</SUP> &ndash;  5x + 1 
+Найти: y<sub>0</sub>; y<sub>1</sub>; y<sub>2</sub> 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+8; 1; 2
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+&ndash;3; &ndash;1; 7
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+7; &ndash;1; 5
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+2; &ndash;1; 0
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+8; 1; &ndash;2
+
+
+<P><B>12.  Функция имеет в точке а максимум, если первая производная в этой точке: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+меняет знак с плюса на минус 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+меняет знак с минуса на плюс 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+остается постоянной 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+стремится к бесконечности 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+не меняет знак 
+
+
+<P><B>13.  Методы решения дифференциальных уравнений, дающие приближенное решение в виде таблицы, называются </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+аналитическими 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+интерполяционными 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+итерационными 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+численными 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+экстраординарными
+
+
+<P><B>14.  Если аргумент x, для которого определяется приближенное значение функции, находится за пределами отрезка интерполирования [х<sub>0</sub>, x<sub>n</sub>], то задача вычисления приближенного значения функции называется
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+дифференцированием 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+интегрированием 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+аппроксимацией 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+интерполированием 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+экстраполированием 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=f>
+приближением
+
+
+<P><B>15.  Прямой угол в угловых минутах равен… </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+90 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+2160 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+5400 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+16200 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+129600 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=f>
+324000 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=g>
+&#916;/2 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=h>
+нет правильного ответа 
+
+<P><B>16.  Градиент функции двух переменных х и y в данной точке: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+перпендикулярен плоскости хOy 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+направлен по оси Z 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+равен 0 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+перпендикулярен линии уровня этой функции 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+касателен линии уровня этой функции 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=f>
+нет правильного ответа 
+
+
+<P><B>17. Минимальное количество прямых углов в прямоугольной трапеции  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+1 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+2 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+3 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+4 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+5 
+
+<P><B>18.  Существует ли полином, который при использовании метода наименьших квадратов для аппроксимации таблично заданной функции проходит через все заданные точки </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+всегда существует для произвольного набора значений функции 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+существует только для случая равномерной сетки 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+в общем случае не существует 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+ответ зависит от значения производной функции 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+ответ зависит от количества заданных значений 
+
+
+<P><B>19.  Дано приближенное число х и его абсолютная погрешность&#916;. x =2017 &#916;=0,871 
+Найти относительную погрешность &#948; этого числа.
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+0,00004%
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+0,0004%
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+0,004%
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+0,04%
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+0,4%
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=f>
+4%
+
+<P><B>20.  Определить интервал, которому принадлежит корень уравнения 2x &ndash; cosx = 0
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+(&ndash;&#8734;;&ndash;3)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+(&ndash;3;&ndash;2)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+(&ndash;1;&ndash;2)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+(&ndash;1;0)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+(0;1)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=f>
+(1;2)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=g>
+(2;3)
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=h>
+(3;&#8734;)
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+<HTML>
+<HEAD>
+<TITLE>Варианты тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "c";
+ans[2] = "c";
+ans[3] = "c";
+ans[4] = "d";
+ans[5] = "d";
+ans[6] = "a";
+ans[7] = "c";
+ans[8] = "a";
+ans[9] = "e";
+ans[10] = "a";
+ans[11] = "c";
+ans[12] = "a";
+ans[13] = "c";
+ans[14] = "a";
+ans[15] = "d";
+ans[16] = "e";
+ans[17] = "b";
+ans[18] = "d";
+ans[19] = "d";
+ans[20] = "e";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №22</H2>
+
+
+<P><B>1. Какой из приведенных ниже операторов правильно вычисляет объем кругового цилиндра с радиусом основания R и высотой H (pi=3.14159265)? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+V=3*pi*R^2/H 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+V=2*pi*R^2*H 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+V=pi*R^2*H 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+V=2*pi*R*H 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+V=4*pi*R^3/3 
+
+
+
+<P><B>2. Раскаты грома послышались через 12 секунд после вспышки молнии. На каком расстоянии произошел электрический разряд? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+0 &#8722; 1 км 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+1 &#8722; 3 км 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+3 &#8722; 5 км 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+5 &#8722; 7 км 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+7 &#8722; 9 км 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=f>
+&#62; 9 км 
+
+
+
+<P><B>3. На координатной плоскости (x,y) заданы две 
+точки: A(x<sub>A</sub>,y<sub>A</sub>) и В(x<sub>B</sub>,y<sub>B</sub>). 
+Какие из приведенных ниже операторов  
+правильно вычисляют координаты точки С - середины отрезка [AB]?    
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+x<sub>С</sub>=x<sub>A</sub>+x<sub>B</sub>/2;   y<sub>С</sub>=y<sub>A</sub>+y<sub>B</sub>/2  
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+x<sub>С</sub>=x<sub>A</sub>+y<sub>B</sub>/2;   y<sub>С</sub>=y<sub>A</sub>+x<sub>B</sub>/2
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+x<sub>С</sub>=(x<sub>A</sub>+x<sub>B</sub>)/2;   y<sub>С</sub>=(y<sub>A</sub>+y<sub>B</sub>)/2
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+x<sub>С</sub>=(x<sub>A</sub>-x<sub>B</sub>)/2;   y<sub>С</sub>=(y<sub>A</sub>-y<sub>B</sub>)/2
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+x<sub>С</sub>=(y<sub>A</sub>+y<sub>B</sub>)/2;   y<sub>С</sub>=(x<sub>A</sub>+x<sub>B</sub>)/2
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=f>
+x<sub>С</sub>=1/2*x<sub>A</sub>+x<sub>B</sub>;   y<sub>С</sub>=1/2*y<sub>A</sub>+y<sub>B</sub>
+
+
+<P><B>4. В магазине осуществляется продажа N различных товаров. Покупатель решает задачу выбора самого дешевого подарка из числа дорогостоящих вещей (вещь стоимостью свыше М рублей считается дорогостоящей). Информационная модель задачи допускает следующую формулировку: 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+в одномерном массиве A(1), A(2), … A(N) среди элементов, меньших M, отыскать наибольший 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+в одномерном массиве A(1), A(2), … A(N) отыскать наименьший элемент 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+в одномерном массиве A(1), A(2), … A(N) отыскать элемент, равный M 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+в одномерном массиве A(1), A(2), … A(N) среди элементов, больших M, отыскать наименьший 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+в одномерном массиве A(1), A(2), … A(N) отыскать наибольший элемент 
+
+
+<P><B>5. Какое количество значений можно закодировать, используя I бит (формула Хартли)?  
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+N=ln(I) 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+N=log<sub>2</sub>(I)
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+N=I<SUP>2</SUP> 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+N=2<SUP>I</SUP> 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+N=log<sub>2</sub>I<SUP>2</SUP> 
+
+
+<P><B>6. Минимальная единица информации - это 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+Бит 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+Байт 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+Символ 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+Восемь бит 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+Восемь байт 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=f>
+Килобайт 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=g>
+Миллибайт 
+
+
+<P><B>7. 1 килобайт - это 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+1000 бит 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+1000 байт 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+1024 байт 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+1024 Кбайт 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+1024 бит 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=f>
+1024 Кбит 
+
+
+<P><B>8. Скорость движения искусственного спутника Земли, обращающегося по круговой орбите на расстоянии 100 км от поверхности Земли примерно равна 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+7,9 километров в секунду 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+11,2 километров в секунду 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+7,9 тысяч километров в час 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+11,2 тысяч километров в час 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+7,9 километров в минуту 
+
+
+
+
+
+<P><B>9. Какой берег у российской реки Волги более крутой и обрывистый? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+Либо правый, либо левый, в зависимости от рельефа местности 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+Левый 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+Оба берега одинаковые 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+Либо левый, либо правый в зависимости от направления течения реки 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+Правый 
+
+
+<P><B>10. В файловой системе FAT16 для записи адреса одного файла выделяется 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+2 байт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+3 байт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+4 байт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+512 байт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+2 Кбайт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=f>
+16 Кбайт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=g>
+32 Кбайт 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=h>
+64 Кбайт 
+
+
+<P><B>11. Точка движется по окружности радиуса R с постоянной угловой скоростью 
+&#969;=const. Чему равно ее полное ускорение?            
+
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+&#969;<SUP>2</SUP>R<SUP>2</SUP>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+&#969;R<SUP>2</SUP>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+&#969;<SUP>2</SUP>R
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+&#969;<SUP>2</SUP>/R<SUP>2</SUP>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+&#969;<SUP>2</SUP>/R
+
+
+<P><B>12. Вектор угловой скорости Земли направлен 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+От центра Земли в направлении северного полюса 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+От центра Земли в направлении южного полюса 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+К центру Земли 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+От центра Земли 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+По касательной к поверхности Земли 
+
+
+<P><B>13. В соответствии с требованиями стандарта моделирования IDEF0 качество разработанной структурно-функциональной модели определяется 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+Заказчиком на этапе сдачи проекта 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+Руководством коллектива разработчиков 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+Количеством сформулированных в цели моделирования вопросов, на которые модель дает адекватный ответ 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+Автором модели в процессе ее создания 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+Полнотой описания моделируемой сложной системы 
+
+
+
+
+
+<P><B>14.  Градиент скалярной функции F(x,y,z)=x<SUP>2</SUP> + y<SUP>2</SUP> + z<SUP>2</SUP> равен     </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+2x<B>i</B> + 2y<B>j</B> + 2z<B>k</B> 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+2x+2y+2z  
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+x<SUP>2</SUP><B>i</B> + y<SUP>2</SUP><B>j</B> + z<SUP>2</SUP><B>k</B>  
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+x<SUP>3</SUP><B>i</B> + y<SUP>3</SUP><B>j</B> + z<SUP>3</SUP><B>k</B> 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+(x<SUP>3</SUP>/3)<B>i</B> + (y<SUP>3</SUP>/3)<B>j</B> + (z<SUP>3</SUP>/3)<B>k</B> 
+
+
+
+
+<P><B>15.  В соответствии с требованиями стандарта моделирования IDEF0 цели моделирования </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+согласовываются с Заказчиком на этапе разработки Технического Задания 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+определяются руководством коллектива исполнителей 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+определяются автором-разработчиком модели 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+формулируются в виде списка вопросов, на которые модель должна давать ответ 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+определяются Заказчиком модели 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=f>
+согласовываются с Заказчиком на этапе сдачи проекта 
+
+
+<P><B>16.   В земле пробурен тоннель от Северного к Южному полюсу. Тело брошено в этот тоннель на Северном полюсе. Наблюдатель следит за полетом с Северного полюса, стоя лицом к Уфе. При движении тела в тоннеле оно 
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+отклонится от вертикали влево 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+отклонится от вертикали вправо 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+отклонится от вертикали вперед 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+отклонится от вертикали назад 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+не отклонится от вертикали 
+
+<P><B>17. Глядя в зеркало, Вы видите у себя справа прыщик. На какой щеке на самом деле у Вас прыщик ? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+на левой щеке 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+на правой щеке 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+прыщик не может появиться на щеке 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+приду сдавать тест снова 
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+нет правильного ответа 
+
+<P><B>18. Вертолет вылетел из Уфы в направлении на северо-восток. Запасов топлива хватит на 40000 км, приборы и погода идеальные. Где приземлится вертолет? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+Будет летать по круговой орбите, пока не кончится топливо 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+В Уфе 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+На Южном полюсе 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+На Северном полюсе 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+В Южном полушарии 
+
+<P><B>19. Какой из приведенных ниже операторов правильно вычисляет объем шара радиуса R (pi=3.14159265)? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+V=3*pi*R^2/4 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+V=pi*R^3/4 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+V=3*pi*R^3/4 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+V=4*pi*R^3/3 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+V=4*pi*R^4/3 
+
+
+<P><B>20. Явление, возникающее при наложении двух гармонических колебаний близкой частоты и выражающееся в периодическом уменьшении и увеличении амплитуды суммарного сигнала - это 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+резонанс 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+солитон 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+параметрический резонанс 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+автоколебания 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+биения 
+
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

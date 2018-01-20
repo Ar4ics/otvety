@@ -1,0 +1,416 @@
+<HTML>
+<HEAD>
+<TITLE>Вариант №137 тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "e";
+ans[2] = "e";
+ans[3] = "b";
+ans[4] = "d";
+ans[5] = "d";
+ans[6] = "e";
+ans[7] = "c";
+ans[8] = "c";
+ans[9] = "d";
+ans[10] = "b";
+ans[11] = "d";
+ans[12] = "e";
+ans[13] = "f";
+ans[14] = "d";
+ans[15] = "b";
+ans[16] = "a";
+ans[17] = "d";
+ans[18] = "d";
+ans[19] = "b";
+ans[20] = "c";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №137</H2>
+
+<P><B>1. Когда возникает задача численного интегрирования? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+необходимо знать значения функции между узловыми точками 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+необходимо знать значения функции для точек, расположенных в начале или в конце таблицы 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+необходимо представить в аналитическом виде функцию, заданную таблицей 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+необходимо представить в более простом виде сложную аналитически заданную функцию 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+необходимо вычислить определенный интеграл от функций, заданных таблицей, или от функций, имеющих сложный аналитический вид 
+
+
+
+<P><B>2.  Как называется процедура вычисления значений функции в точках, не являющихся узлами сетки </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+интегрирование 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+дифференцирование 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+коммутирование 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+аппроксимация 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+интерполирование 
+
+
+
+<P><B>3. Для решения какой вычислительной задачи применяется метод Гаусса? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+Для вычисления определенных интегралов 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+Для решения систем линейных уравнений вида AX=B 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+Для решения дифференциальных уравнений 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+Для поиска минимума функции многих переменных 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+Для решения нелинейного уравнения вида f(x)=0 
+
+
+<P><B>4.  Какая из приведенных ниже формул приближенного вычисления первой производной  от функции y(x) 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+dy/dx &#8776; &#916;y/&#916;x = [y(x+&#916;x) &ndash; y(x)]/&#916;x
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+dy/dx &#8776; &#916;y/&#916;x = [y(x) &ndash; y(x&ndash;&#916;x)]/&#916;x
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+dy/dx &#8776; &#916;y/&#916;x = [y(x+&#916;x) &ndash; y(x&ndash;&#916;x)]/2&#916;x
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+все ответы верные 
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+нет правильного ответа
+
+<P><B>5. Реккурентное уравнение решения алгебраических уравнений вида f(x)=0 имеет вид:
+x<sub>k</sub>=x<sub>k&ndash;1</sub>&ndash;f(x<sub>k&ndash;1</sub>)/f'(x<sub>k&ndash;1</sub>) в методе 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+Гаусса 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+Гей-Люссака 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+Крамера 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+Ньютона 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+Карлсона
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=f>
+простой итерации 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=g>
+комбинированного метода 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=h>
+Рунге-Кутта 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=i>
+Бойля-Мариотта 
+
+
+
+<P><B>6. Укажите рекуррентную формулу метода простой итерации:
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+x = &#966;
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+x = C
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+x<sub>n+1</sub> = &#968;(x<sub>n</sub>) +  &#966;(x<sub>n</sub>)
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+x<sub>n&ndash;1</sub> = &#968;(x<sub>n</sub>) &ndash;  &#966;(x<sub>n</sub>)
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+x<sub>n+1</sub> = &#966;(x<sub>n</sub>)
+
+<P><B>7. Отделение корней можно выполнить двумя способами: </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+приближением и отделением 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+аналитическим и систематическим 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+аналитическим и графическим 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+систематическим и графическим 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+приближением последовательным и параллельным 
+
+
+<P><B>8.  Для формул численного интегрирования справедливы следующие утверждения: 
+<BR>А) Для составной квадратурной формулы метода Симпсона необходимо использовать нечетное количество интервалов разбиения. 
+<BR>В) Метод трапеций имеет более высокую точность, чем метод прямоугольников. 
+<BR>Подберите правильный ответ
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+A &ndash; да, В &ndash; да
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+А &ndash; да, В &ndash; нет
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+А &ndash; нет, В &ndash; да
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+А &ndash; нет, В &ndash; нет
+
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+Ответ зависит от вида интеграла
+
+
+
+<P><B>9. Под каким углом к оси Ox наклонена касательная к графику  y=x<SUP>2</SUP>lnx в точке x<sub>0</sub>=1? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+0&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+15&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+30&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+45&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+60&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=f>
+75&#176;
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=g>
+90&#176;
+
+
+<P><B>10.  Интерполяционный многочлен какой степени используется для построения квадратуры Симпсона численного интегрирования? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+первой 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+второй 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+третьей 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+четвертой 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+шестой 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=f>
+произвольной 
+
+
+
+<P><B>11.  Под каким углом к оси абсцисс направлен градиент  функции 
+z = cosx + siny   в точке М(&ndash;&#960;/4;&#960;/4)?      </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+&#8722;90&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+&#8722;45&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+0&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+45&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+90&#176;
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=f>
+180&#176;
+
+
+
+<P><B>12.  Какие из перечисленных методов служат для приближенного вычисления определённого интеграла? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+Метод Гаусса 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+Метод Рунге-Кутта 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+Метод Ньютона-Лейбница 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+Метод Коши 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+Метод трапеций 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=f>
+Метод градиентного спуска
+
+
+<P><B>13. Задано нелинейное уравнение вида  x + 2lnx + 0,5 = 0 и начальное приближение x<sub>0</sub>=1. Один шаг метода 
+Ньютона дает 
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+0 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+0,5 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+0,75 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+1 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+1,25 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=f>
+1,5 
+
+
+
+<P><B>14.  Условие   вида  25x<SUP>2</SUP>+16y<SUP>2</SUP> &#8805; 1 задает  на плоскости x0y</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+эллипс с полуосями 5 и 4 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+эллипс с полуосями 1/5 и 1/4 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+плоскость x0y с вырезанным на ней эллипсом с полуосями 5 и 4 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+плоскость x0y с вырезанным на ней эллипсом с полуосями 1/5 и 1/4 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+круг радиуса 25 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=f>
+плоскость x0y с вырезанным на ней кругом
+
+
+<P><B>15. Численные методы прямого поиска используют  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+первую производную 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+значение функции в вычисляемых точках 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+ряд значений функции 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+вторую производную 
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+метод итерации 
+
+
+<P><B>16. Опишите порядок решения системы линейных алгебраических уравнений методом итераций  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+Заданная система линейных уравнений каким-либо образом приводится к эквивалентному виду.
+Исходя из произвольного начального вектора, строится итерационный процесс. При выполнении
+достаточных условий сходимости, получается последовательность векторов, неограниченно
+приближающихся к точному решению
+
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+Если матрица коэффициентов А невырожденная (определитель этой матрицы не равен нулю), то
+исходная система имеет единственное решение. Значения неизвестных могут быть получены по
+формулам x<sub>i</sub>=detA<sub>i</sub>/detA, detA<sub>i</sub> и detA &ndash; определители 
+матриц A<sub>i</sub> и А соответственно. 
+Матрица A<sub>i</sub>
+образуется из матрицы А путем замены ее i-го столбца столбцом свободных членов. 
+
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+В основе данного метода лежит идея последовательного исключения неизвестных. Решение
+системы распадается на два этапа: 1) прямой ход, когда исходная система приводится к треугольному
+виду; 2) полученные коэффициенты при неизвестных и правые части уравнений хранятся в памяти
+ЭВМ и используются при осуществлении обратного хода, который заключается в нахождении
+неизвестных из системы треугольного вида.
+
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+Метод итераций разработан для решения системы линейных алгебраических уравнений
+ с трехдиагональной матрицей коэффициентов
+
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+Метод итераций не применяется для  решения системы линейных алгебраических уравнений
+
+
+
+<P><B>17.  Относительная погрешность &#949; 
+приближенного значения a точного числа A находится по формуле
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+&#949; =  a/A
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+&#949; = a &ndash; A/A
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+&#949; = A &ndash; a/A
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+&#949; = a/A &ndash; 1
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+&#949; = a &ndash; 1/A
+
+<P><B>18.  Какой из нижеперечисленных методов НЕ применяется при решении системы линейных уравнений вида AX=B ? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+Метод Гаусса 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+Формулы Крамера 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+Матричный метод 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+Метод Ньютона 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+Метод Якоби 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=f>
+Метод Зейделя 
+
+
+<P><B>19.   В чем состоит основная идея метода прямоугольников при вычислении определенных интегралов </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+Подинтегральная функция аппроксимируется набором отрезков, параллельных оси ординат 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+Подинтегральная функция аппроксимируется набором отрезков, параллельных оси абсцисс 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+Подинтегральная функция аппроксимируется набором отрезков, перпендикулярных оси абсцисс 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+Подинтегральная функция разлагается в ряд Тейлора 
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+Подинтегральная функция разлагается в ряд Маклорена 
+
+
+<P><B>20. Какой из перечисленных ниже методов НЕ применяется при поиске минимума функции вида f(x)=0?  </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+Метод золотого сечения 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+Метод половинного деления 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+Метод Симпсона 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+Метод бисекции 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+Оптимальный пассивный поиск 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=f>
+Метод Ньютона 
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>
