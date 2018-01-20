@@ -1,0 +1,403 @@
+<HTML>
+<HEAD>
+<TITLE>Вариант №139 тестовых заданий для будущих магистров потока МПО  </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<SCRIPT language=JavaScript>
+<!-- Original: Monichar -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var score = 0;
+ans[1] = "b";
+ans[2] = "c";
+ans[3] = "c";
+ans[4] = "a";
+ans[5] = "b";
+ans[6] = "b";
+ans[7] = "d";
+ans[8] = "d";
+ans[9] = "b";
+ans[10] = "d";
+ans[11] = "a";
+ans[12] = "a";
+ans[13] = "d";
+ans[14] = "b";
+ans[15] = "d";
+ans[16] = "e";
+ans[17] = "f";
+ans[18] = "b";
+ans[19] = "c";
+ans[20] = "e";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Ошибка!\n\nВаш счет: " + score);
+}
+else {
+alert("Вы уже отвечали на это!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Правильно!\n\nСейчас Ваш счет: " + score);
+}
+else { 
+alert("Вы уже ответили на это!");
+}
+}
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY text=black bgColor=white background="oboifon.jpg">
+
+<H2>Вариант №139</H2>
+
+<P><B>1. Для решения какой вычислительной задачи применяется метод золотого сечения? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=a>
+Для решения систем линейных уравнений вида AX=B 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=b>
+Для поиска минимума функции одной переменной 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=c>
+Для решения дифференциальных уравнений 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=d>
+Для вычисления определенных интегралов 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=e>
+Для поиска минимума функции многих переменных 
+<BR><INPUT onclick="Engine(1, this.value)" type=radio value=f>
+Для решения нелинейного уравнения вида f(x)=0 
+
+
+<P><B>2.  Пусть система Ax = b имеет единственное решение. Преобразуем ее к виду x = Bx + c. Итерационный процесс
+x<SUP>n+1</SUP>=Bx<SUP>n</SUP>+c 
+сходится к решению данной системы при любом начальном приближении тогда и только тогда, когда
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=a>
+все собственные значения матрицы B равны нулю 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=b>
+все собственные значения матрицы B не равны нулю 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=c>
+все собственные значения матрицы B по модулю меньше 1 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=d>
+все собственные значения матрицы B по модулю равны 1 
+<BR><INPUT onclick="Engine(2, this.value)" type=radio value=e>
+все собственные значения матрицы B по модулю больше 1 
+
+
+
+
+<P><B>3. Проблема получения формулы сходящегося итерационного процесса возникает при решении уравнения f(x)=0 методом… </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=a>
+хорд 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=b>
+Ньютона 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=c>
+простых итерации 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=d>
+сканирования 
+<BR><INPUT onclick="Engine(3, this.value)" type=radio value=e>
+деления отрезка пополам (дихотомии) 
+
+
+
+
+<P><B>4.  Условием  сходимости для метода последовательных приближений 
+при решении нелинейного уравнения вида f(x)=0, x&#8712;[a,b] является :       </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=a>
+|f&#8242;(x)| &#60; 1
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=b>
+|f&#8242;(x)| = 0
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=c>
+|f&#8242;(x)| = 1
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=d>
+|f&#8242;(x)| &#62; 1
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=e>
+|f(x)| &#60; 0
+<BR><INPUT onclick="Engine(4, this.value)" type=radio value=f>
+&#916;A &#8800; 0
+
+
+
+
+<P><B>5. Что более важно для правильного анализа по методу конечных элементов? 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=a>
+Иметь хорошую программу для автоматического разделения сеткой 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=b>
+Знать как установить граничные условия по нагрузкам и перемещениям 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=c>
+Иметь быструю программу для математического решения задачи 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=d>
+Иметь хороший постпроцессор (программу для визуализации результатов) 
+<BR><INPUT onclick="Engine(5, this.value)" type=radio value=e>
+Иметь двухядерный процессор 
+
+
+
+
+<P><B>6.  Функция задана таблицей :
+<table border=1 cellpadding=2>
+<tr align=center><td>i</td><td>0</td><td>1</td><td>2</td></tr>
+<tr align=center><td>x</td><td>&ndash;1</td><td>0</td><td>1</td></tr>
+<tr align=center><td>y</td><td>7</td><td>&ndash;1</td><td>5</td></tr>
+</table>
+Cоответствующий интерполяционный многочлен имеет вид
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=a>
+y = 2x<SUP>2</SUP> &ndash;  x &ndash; 1 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=b>
+y = 7x<SUP>2</SUP> &ndash;  x &ndash; 1 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=c>
+y = 3x<SUP>2</SUP> + 5x &ndash; 1 
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=d>
+y = 2x<SUP>2</SUP> &ndash;  5x + 1
+<BR><INPUT onclick="Engine(6, this.value)" type=radio value=e>
+y = x<SUP>2</SUP> + x + 1
+
+<P><B>7. Дано уравнение 2x<SUP>3</SUP>  &ndash; 5х<SUP>2</SUP>  + 4x &ndash; 3 = 0. Для того, чтобы отделить корни графически…
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=a>
+строим графики y = 2x<SUP>3</SUP> и y = 5х<SUP>2</SUP>  + 4x &ndash;  3 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=b>
+записываем уравнение в виде х = &#966;( х ), …
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=c>
+находим производную (2x<SUP>3</SUP> и y = 5х<SUP>2</SUP>  + 4x &ndash;  3), находим критические точки, …
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=d>
+строим графики y = 2x<SUP>3</SUP> и y = 5х<SUP>2</SUP>  &ndash; 4x + 3 
+<BR><INPUT onclick="Engine(7, this.value)" type=radio value=e>
+находим вторую производную, определяем ее знак, …
+
+
+<P><B>8.  Важность задач решения систем линейных уравнений заключается в том, что </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=a>
+при решении нелинейных задач часто конструируются алгоритмы, основанные на последовательном решении линейных систем 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=b>
+они используются при переводе чисел из десятичной системы счисления в двоичную 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=c>
+они используются при оценке ошибок погрешностей округления 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=d>
+эти задачи встречаются чаще всего в приложениях 
+<BR><INPUT onclick="Engine(8, this.value)" type=radio value=e>
+к ним, как правило, сводится численное решение дифференциальных уравнений 
+
+<P><B>9.  Площадь поверхности сферы равна 9&#960;. Тогда радиус этой сферы равен 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=a>
+1 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=b>
+1,5 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=c>
+2 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=d>
+2,5 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=e>
+3 
+<BR><INPUT onclick="Engine(9, this.value)" type=radio value=f>
+это не сфера, а афера
+
+
+<P><B>10. Единичная матрица &ndash; это матрица, у которой
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=a>
+сумма элементов каждой строки равна единице 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=b>
+все элементы первого столбцаравны единице, а остальные элементы равны нулю 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=c>
+все элементы равны единице 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=d>
+на главной диагонали стоят единицы, а все остальные элементы равны нулю 
+<BR><INPUT onclick="Engine(10, this.value)" type=radio value=e>
+все элементы первой строки равны единице, а остальные элементы равны нулю 
+
+
+<P><B>11.  Сумма  2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 +  ...  + 2<SUP>2017</SUP>  равна 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=a>
+2<SUP>2018</SUP> &ndash; 2
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=b>
+2<SUP>2018</SUP> &ndash; 1
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=c>
+2<SUP>2018</SUP>
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=d>
+2<SUP>2018</SUP> + 1
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=e>
+2<SUP>2018</SUP> +2 
+<BR><INPUT onclick="Engine(11, this.value)" type=radio value=f>
+я что &ndash; с дуба упал, чтобы считать такие суммы ?
+
+
+<P><B>12. Что больше: 2018% от 2016 или 2017% от 2017 ?
+</B>
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=a>
+2017% от 2017  больше 2018% от 2016
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=b>
+2017% от 2017  равно 2018% от 2016
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=c>
+2017% от 2017  меньше 2018% от 2016
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=d>
+таких процентов не бывает 
+<BR><INPUT onclick="Engine(12, this.value)" type=radio value=e>
+такие проценты бывают, но они запрещены законодательством РФ 
+
+
+<P><B>13.  Какой из методов называют методом парабол ? </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=a>
+метод золотого сечения 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=b>
+метод средней точки 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=c>
+метод Ньютона 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=d>
+метод Симпсона 
+<BR><INPUT onclick="Engine(13, this.value)" type=radio value=e>
+метод половинного деления 
+
+
+<P><B>14.  Если во всех точках интервала 
+(a,b) имеет место f&#8242;(x)&#62;0, то функция f(x)                 
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=a>
+убывает на интервале (a,b) 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=b>
+возрастает на интервале (a,b) 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=c>
+обращена выпуклостью вниз на интервале (a,b) 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=d>
+обращена выпуклостью вверх на интервале (a,b) 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=e>
+отрицательна на интервале (a,b) 
+<BR><INPUT onclick="Engine(14, this.value)" type=radio value=f>
+положительна на интервале (a,b) 
+
+
+<P><B>15.  Первообразной функции y = a<SUP>x</SUP> является функция:
+</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=a>
+y = a<SUP>x</SUP>&#183;lna
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=b>
+y = a<SUP>x</SUP>&#183;ln<SUP>2</SUP>a
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=c>
+y = a<SUP>x</SUP>&#183;ln<SUP>3</SUP>a
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=d>
+y = a<SUP>x</SUP>/lna
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=e>
+y = a<SUP>x</SUP>/ln<SUP>2</SUP>a
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=f>
+y = a<SUP>x</SUP>/lnx
+<BR><INPUT onclick="Engine(15, this.value)" type=radio value=g>
+y = a<SUP>x</SUP>/ln<SUP>2</SUP>x
+
+<P><B>16.  Имитационное моделирование проводится </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=a>
+в рамках стандарта IDEF0 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=b>
+в рамках стандарта DFD 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=c>
+в рамках стандарта IDEF3 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=d>
+в рамках стандартов IDEF0, DFD и IDEF3 
+<BR><INPUT onclick="Engine(16, this.value)" type=radio value=e>
+путем проведения вычислительных экспериментов 
+
+
+<P><B>17.  Задача определения значений материальных постоянных a,b,c,d 
+в модели среды вида y=(a+b)x<SUP>2</SUP>+cx+d из заданного набора 
+экспериментальных данных {x<SUB>i</SUB>,y<SUB>i</SUB>}, i=1,2,…,</B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=a>
+корректна при условии N&#62;1
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=b>
+корректна при условии N&#62;2
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=c>
+корректна при условии N&#62;3
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=d>
+корректна при условии N&#62;4
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=e>
+корректна при условии N&#62;5
+<BR><INPUT onclick="Engine(17, this.value)" type=radio value=f>
+некорректна 
+
+<P><B>18.  Пусть функция y=f(x) непрерывна на отрезке [a,b] и 
+f&#8242;(x<sub>0</sub>)=0, f&#8243;(x<sub>0</sub>)&#60;0, 
+где a&#60;x<sub>0</sub>&#60;b. Тогда 
+функция y=f(x) имеет в точке x=x<sub>0</sub>    </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=a>
+локальный минимум 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=b>
+локальный максимум 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=c>
+глобальный минимум 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=d>
+глобальный максимум 
+<BR><INPUT onclick="Engine(18, this.value)" type=radio value=e>
+точку перегиба
+
+
+<P><B>19. Верны ли следующие утверждения?
+<BR>A. Метод итераций для решения нелинейного уравнения сходится не всегда
+<BR>B. Метод Ньютона для решения нелинейного уравнения сходится всегда
+ </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=a>
+А &ndash;  нет, В &ndash;  нет
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=b>
+А &ndash;  нет, В &ndash;  да
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=c>
+А &ndash;  да, В &ndash;  нет
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=d>
+А &ndash;  да, В &ndash;  да
+<BR><INPUT onclick="Engine(19, this.value)" type=radio value=e>
+ответ зависит от быстродействия компьютера 
+
+
+<P><B>20. Пусть функция y=f(x) непрерывна на отрезке [a,b] и 
+f&#8242;(x<sub>0</sub>)&#62;0, f&#8243;(x<sub>0</sub>)=0, 
+где a&#60;x<sub>0</sub>&#60;b. Тогда 
+функция y=f(x) имеет в точке x=x<sub>0</sub> </B>
+<p><I>Ответы</I>
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=a>
+локальный минимум 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=b>
+локальный максимум 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=c>
+глобальный минимум 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=d>
+глобальный максимум 
+<BR><INPUT onclick="Engine(20, this.value)" type=radio value=e>
+точку перегиба
+
+
+
+<P><A HREF="../Критерии оценки.htm">Критерии оценки</A>
+
+</td></tr></table>
+
+
+</body>
+</html>

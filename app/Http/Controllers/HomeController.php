@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use File;
 use Goutte\Client;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
+use Illuminate\Http\Request;
 use Storage;
 use Symfony\Component\DomCrawler\Crawler;
+use Symfony\Component\Finder\SplFileInfo;
 
 class HomeController extends Controller
 {
@@ -40,6 +43,35 @@ class HomeController extends Controller
             return view('answers', ['answers' => $answers, 'part' => $part]);
         } catch (FileNotFoundException $e) {
             return $e;
+        }
+    }
+
+    public function search(Request $request)
+    {
+        $searchString = $request->input('question');
+        $files = File::allFiles(public_path() . '/training');
+        $targetFiles = [];
+        foreach ($files as $file) {
+            /** @var SplFileInfo $file */
+            $content = mb_convert_encoding($file->getContents(), "utf-8", "windows-1251");
+            if (strpos($content, $searchString) !== false) {
+                $targetFiles[] = $file->getFilename();
+            }
+        }
+        return view('results', ['results' => $targetFiles]);
+    }
+
+    public function searchPage()
+    {
+        return view('search');
+    }
+
+    public function getVariant($title) {
+        try {
+            $file = File::get(public_path() . '/training/' . $title);
+            return mb_convert_encoding($file, "utf-8", "windows-1251");
+        } catch (FileNotFoundException $e) {
+            return 'error';
         }
     }
 

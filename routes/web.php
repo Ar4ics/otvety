@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/questions/{part}','HomeController@questions');
 Route::get('/parse/{part}', 'HomeController@parse');
 Route::get('/answers/{part}', 'HomeController@answers');
+Route::get('/search', 'HomeController@searchPage');
+Route::post('/search', 'HomeController@search');
+Route::get('/get/{title}', 'HomeController@getVariant');
