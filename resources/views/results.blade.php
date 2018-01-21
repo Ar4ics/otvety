@@ -1,4 +1,9 @@
-@foreach ($results as $link)
-    <a href="{{ '/get/' . $link }}">{{ $link }}</a>
-@endforeach
-
+@if (!empty($results))
+    @foreach ($results as $link)
+        <p>
+            <a href="{{ '/get/' . $link }}">{{ $link }}</a>
+        </p>
+    @endforeach
+@else
+    <p>Нет ответа</p>
+@endif
