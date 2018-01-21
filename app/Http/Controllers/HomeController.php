@@ -74,7 +74,7 @@ class HomeController extends Controller
             $file = File::get($filename);
             $content = mb_convert_encoding($file, "utf-8", "windows-1251");
             if ($extension === 'txt') {
-                return '<pre>' . $content . '</pre>';
+                return '<pre>' . e($content) . '</pre>';
             }
             return $content;
         } catch (FileNotFoundException $e) {
