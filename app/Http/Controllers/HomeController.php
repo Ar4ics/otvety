@@ -54,7 +54,7 @@ class HomeController extends Controller
         foreach ($files as $file) {
             /** @var SplFileInfo $file */
             $content = mb_convert_encoding($file->getContents(), "utf-8", "windows-1251");
-            if (strpos($content, $searchString) !== false) {
+            if (mb_stripos($content, $searchString) !== false) {
                 $targetFiles[] = $file->getFilename();
             }
         }
