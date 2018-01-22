@@ -25,7 +25,13 @@
                         @endif
                     @endforeach
                 </ol>
-                <b>Правильный ответ {{ $answer->correct }}</b>
+                <p>Ответ:
+                    @if (filter_var($answer->correct, FILTER_VALIDATE_URL))
+                        <a href="{{ $answer->correct }}" target="_blank">{{ $answer->correct }}</a>
+                    @else
+                        {{ $answer->correct }}
+                    @endif
+                </p>
             </td>
         </tr>
     @endforeach
