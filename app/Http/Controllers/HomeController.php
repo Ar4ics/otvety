@@ -78,7 +78,7 @@ class HomeController extends Controller
             }
             return $content;
         } catch (FileNotFoundException $e) {
-            return 'error';
+            return 'file not found';
         }
     }
 
