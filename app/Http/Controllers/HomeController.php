@@ -53,7 +53,7 @@ class HomeController extends Controller
         $targetFiles = [];
         foreach ($files as $file) {
             /** @var SplFileInfo $file */
-            $content = mb_convert_encoding($file->getContents(), "utf-8", "windows-1251");
+            $content = mb_convert_encoding($file->getContents(), 'utf-8', 'windows-1251');
             if (mb_stripos($content, $searchString) !== false) {
                 $targetFiles[] = $file->getFilename();
             }
@@ -72,9 +72,12 @@ class HomeController extends Controller
             $filename = public_path() . '/training/' . $title;
             $extension = File::extension($filename);
             $file = File::get($filename);
-            $content = mb_convert_encoding($file, "utf-8", "windows-1251");
+            $content = mb_convert_encoding($file, 'utf-8', 'windows-1251');
             if ($extension === 'txt') {
-                return '<pre>' . e($content) . '</pre>';
+                return '<pre style="word-wrap: break-word; white-space: pre-wrap;">' . e($content) . '</pre>';
+            }
+            if ($extension === 'htm') {
+                return $content . '<pre>' . e($content) . '</pre>';
             }
             return $content;
         } catch (FileNotFoundException $e) {
