@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use Goutte\Client;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Http\Request;
@@ -24,8 +25,12 @@ class HomeController extends Controller
             'GET',
             'https://otvert.herokuapp.com/questions/' . $part
         );
-        $data = $crawler->filter('table > tr > td')->each(function (Crawler $node) {
-            $q = trim($node->filter('b')->html());
+        $data = $crawler->filter('body > table > tr > td')->each(function (Crawler $node) {
+            try {
+                $q = trim($node->filter('b')->html());
+            } catch (Exception $e) {
+                $q = 'not found';
+            }
             $answers = $node->filter('ol li')->each(function (Crawler $node) {
                 return trim($node->html());
             });
