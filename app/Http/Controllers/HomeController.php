@@ -22,7 +22,7 @@ class HomeController extends Controller
         $client = new Client();
         $crawler = $client->request(
             'GET',
-            'https://otvety-test.herokuapp.com/questions/' . $part
+            'https://otvert.herokuapp.com/questions/' . $part
         );
         $data = $crawler->filter('table > tr > td')->each(function (Crawler $node) {
             $q = trim($node->filter('b')->html());
