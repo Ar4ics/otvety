@@ -29,7 +29,7 @@ class HomeController extends Controller
             $answers = $node->filter('ol li')->each(function (Crawler $node) {
                 return trim($node->html());
             });
-            return ['question' => $q, 'answers' => $answers, 'correct' => 1];
+            return ['question' => $q, 'answers' => $answers, 'correct' => 0, 'comment' => ''];
         });
         $json_data = json_encode($data, JSON_UNESCAPED_UNICODE);
         Storage::put($part . '/questions.json', $json_data);

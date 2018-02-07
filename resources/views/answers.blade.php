@@ -23,7 +23,7 @@
                 @endforeach
             </ol>
             <p>Ответ:
-                {!! preg_replace('"\b(https?://\S+)"', '<a href="$1" target="_blank">$1</a>', $answer->correct) !!}
+                {!! preg_replace('"\b(https?://\S+)"', '<a href="$1" target="_blank">$1</a>', $answer->comment) !!}
             </p>
         </div>
     @endforeach
