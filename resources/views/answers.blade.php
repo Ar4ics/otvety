@@ -22,8 +22,8 @@
                     @endif
                 @endforeach
             </ol>
-            <p>Ответ:
-                {!! preg_replace('"\b(https?://\S+)"', '<a href="$1" target="_blank">$1</a>', $answer->comment) !!}
+            <p>Комментарий:
+                {!! preg_replace('"\b(https?://\S+)"', '<a href="$1" target="_blank">$1</a>', $answer->comment ?? $answer->correct) !!}
             </p>
         </div>
     @endforeach
