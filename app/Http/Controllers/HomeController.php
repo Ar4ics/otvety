@@ -31,7 +31,7 @@ class HomeController extends Controller
             } catch (Exception $e) {
                 $q = 'not found';
             }
-            $answers = $node->filter('ol li')->each(function (Crawler $node) {
+            $answers = $node->children()->last()->filter('li')->each(function (Crawler $node) {
                 return trim($node->html());
             });
             return ['question' => $q, 'answers' => $answers, 'correct' => 0, 'comment' => ''];
