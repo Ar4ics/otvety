@@ -13,15 +13,17 @@
     @foreach ($answers as $answer)
         <div>
             <b>{!! $answer->question !!}</b>
-            <ol>
-                @foreach ($answer->answers as $variant)
-                    @if ($loop->iteration === $answer->correct)
-                        <li style="background-color: #2ab27b">{!! $variant !!}</li>
-                    @else
-                        <li>{!! $variant !!}</li>
-                    @endif
-                @endforeach
-            </ol>
+            @if (isset($answer->answers))
+                <ol>
+                    @foreach ($answer->answers as $variant)
+                        @if ($loop->iteration === $answer->correct)
+                            <li style="background-color: #2ab27b">{!! $variant !!}</li>
+                        @else
+                            <li>{!! $variant !!}</li>
+                        @endif
+                    @endforeach
+                </ol>
+            @endif
             <p>Комментарий:
                 {!! preg_replace('"\b(https?://\S+)"', '<a href="$1" target="_blank">$1</a>', $answer->comment ?? $answer->correct) !!}
             </p>

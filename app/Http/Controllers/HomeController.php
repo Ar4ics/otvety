@@ -51,6 +51,16 @@ class HomeController extends Controller
         }
     }
 
+    public function allAnswers()
+    {
+        try {
+            $answers = json_decode(Storage::get('all.json'));
+            return view('answers', ['answers' => $answers, 'part' => 'итог']);
+        } catch (FileNotFoundException $e) {
+            return $e;
+        }
+    }
+
     public function search(Request $request)
     {
         $searchString = $request->input('question');
